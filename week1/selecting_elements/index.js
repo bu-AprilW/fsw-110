@@ -1,3 +1,1 @@
-document.getElementById("h1").innerHTML ="Hello!";
-
-console.log(document)
+document.getElementById("text").textContent += "Hello";
