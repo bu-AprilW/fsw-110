@@ -12,20 +12,20 @@ function add() {
     b = Number(document.getElementById("num2").value);
     c = a + b;
     document.getElementById("result").value = c;
-}
+};
 
-function substract() {
+function subtract() {
     var a,b,c;
-    a = Number(document.getElementById("num1").value);
-    b = Number(document.getElementById("num2").value);
+    a = Number(document.getElementById("numA").value);
+    b = Number(document.getElementById("numB").value);
     c = a - b;
-    document.getElementById("result").value = c;
-}
+    document.getElementById("result2").value = c;
+};
 
 function multiply() {
     var a,b,c;
-    a = Number(document.getElementById("num1").value);
-    b = Number(document.getElementById("num2").value);
+    a = Number(document.getElementById("numOne").value);
+    b = Number(document.getElementById("numTwo").value);
     c = a * b;
-    document.getElementById("result").value = c;
-}
+    document.getElementById("result3").value = c;
+};
