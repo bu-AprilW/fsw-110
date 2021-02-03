@@ -1,5 +1,5 @@
-var input = document.getElementById("change-me");
 // select our input by ID and assign it to the variable, "input"
+var input = document.getElementById("change-me");
 
 // use the add event listener method to put an event on "input"
 // "change is one of a few dozen strings and add event listener will understand. It's our first argument
