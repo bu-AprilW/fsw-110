@@ -3,3 +3,7 @@
 Example of output: You've pressed the "a" key. It's key code is 65.
 
 Wes Bos made this https://keycode.info/ for us to use as an example. */
+
+window.addEventListener("keydown", function(e) {
+    document.getElementById("output").innerHTML = ("You've pressed the " + e.key + " key. It's key code is " + e.keyCode + ".");
+});
