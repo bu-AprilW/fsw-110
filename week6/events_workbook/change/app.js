@@ -6,7 +6,9 @@ var input = document.getElementById("change-me");
 input.addEventListener("change", function(e) { //we pass an entire function as the second argument.
     document.getElementById("output").textContent = e.target.value
     // select the div, and change the "textContent" property to the value of the events target (the input box)
-})
+});
+
+document.title = "Change";
 
 // "e" is important here. You can define it as "event" or whatever you need, but it's common to just call it "e"
 // it has properties that help describe the event, includeing the "e.target" object

@@ -15,3 +15,5 @@ ele[0].addEventListener("mouseout", clearCord);
 function clearCord() {
     ele[0].innerHTML = "";
 }
+
+document.title = "Mousemove";

@@ -6,3 +6,5 @@ var s = document.getElementById("submit-me");
 s.addEventListener("click", function(e) {
     e.preventDefault()
 });
+
+document.title = "Submit";

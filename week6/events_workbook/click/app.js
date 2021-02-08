@@ -2,3 +2,5 @@
 document.getElementsByClassName("red-box")[0].addEventListener("click", function(e) {
     document.getElementsByClassName("red-box")[0].style.display = "none";
 });
+
+document.title = "Click";
