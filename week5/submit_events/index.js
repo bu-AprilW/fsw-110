@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
 
 
 function display() {
-    DispWin = window.open('', 'NewWin', 'toolbar=no, status=no, width=300, height=200');
+    DispWin = window.open('', 'NewWin', 'toolbar=no, status=no, width=400, height300');
     message = "First Name: " + document.myForm.fname.value;
     message1 = "Last Name: " + document.myForm.lname.value;
     message2 = "Age: " + document.myForm.age.value;
