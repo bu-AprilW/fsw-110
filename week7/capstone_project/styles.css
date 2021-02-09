@@ -56,7 +56,7 @@ button:hover {
 }
 
 .delete_btn {
-    background: url("images/trash.png");
+    background: url("trash.png");
     width: 25px;
     height: 25px;
     border: none;
@@ -65,7 +65,7 @@ button:hover {
 
 @media only screen and   (min-width: 768px) {
     body {
-        background-image: url("images/to_do_list.png");
+        background-image: url("to_do_list.png");
     }
     #gridContainer {
         grid-template-columns: repeat(5, 140px);
