@@ -1,0 +1,84 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-image: url("images/to_do_list.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#gridContainer {
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 300px);
+}
+
+main {
+    display: flex;
+    min-height: 300px;
+}
+
+#mainContent {
+    flex: 1 1 auto;
+}
+
+header, main, footer {
+    padding: 10px;
+}
+
+div {
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: solid grey;
+    font-family: "Gill Sans", sans serif;
+    width: 200px;
+}
+
+textarea {
+    border: solid gray;
+    font-family: "Gill Sans", sans serif;
+    resize: none;
+    width: 300px;
+    height: 50px;
+}
+
+button {
+    background-color: royalblue;
+    font-family: "Gill Sans", sans-serif;
+}
+
+button:hover {
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.delete_btn {
+    background: url("images/trash.png");
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and   (min-width: 768px) {
+    body {
+        background-image: url("images/to_do_list.png");
+    }
+    #gridContainer {
+        grid-template-columns: repeat(5, 140px);
+    }
+    header {
+        grid-column: 1 / 6;
+    }
+    main {
+        display: flex;
+        grid-column: 1 / 6;
+        min-height: 450px;
+    }
+    footer {
+        grid-column: 1 / 6;
+    }
+}
