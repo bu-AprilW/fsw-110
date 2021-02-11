@@ -1,27 +1,99 @@
 html, body {
     background-color: #696969;
-    color: #00ced1;
+    color: #ff0000;
     width: 100%;
 }
 
 h1 {
+    font-size: 40px;
     text-align: center;
 }
 
-main, form {
-    width: 90%;
-    margin: auto;
+input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-table {
-    min-width: 25em;
-    text-align: right;
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
 }
 
-td {
-    padding: 1em;
+#buttons {
+    text-align: center;
 }
 
-#totals h4 {
-    margin: 0;
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+#goomba {
+    text-align: center;
+}
+
+#goombaPrice {
+    text-align: center;
+}
+
+#bobomb {
+    text-align: center;
+}
+
+#bobombsPrice {
+    text-align: center;
+}
+
+#cheepcheep {
+    text-align: center;
+}
+
+#cheepcheepsPrice {
+    text-align: center;
+}
+
+#goombaImg {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#bobombsImg {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#cheepcheepsImg {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#baddieGoomba {
+    font-size: 20px;
+    background-color: #ff0000;
+    border: solid #ffffff;
+    grid-column: 1/5;
+}
+
+#baddieBobombs {
+    font-size: 20px;
+    background-color: #ff0000;
+    border: solid #ffffff;
+    grid-column: 5/9;
+}
+
+#baddieCheepCheeps {
+    font-size: 20px;
+    background-color: #ff0000;
+    border: solid #ffffff;
+    grid-column: 9/13;
 }

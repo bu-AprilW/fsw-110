@@ -1,15 +1,29 @@
-const pests = document.baddies;
-pests.addEventListener("submit", function(e) {
-    e.preventDefault();
+const formPrice = document.prices;
+const total = document.getElementById("submitBtn");
+const clearTotal = document.getElementById("clearBtn");
 
-    let g = parseInt(pests.goombas.value);
-    let b = parseInt(pests.bobombs.value);
-    let c = parseInt(pests.cheepCheeps.value);
-let total = (g * 5) + (b * 7) + (c * 11);
+total.addEventListener("click", function(e) {
+    e.preventDefault()
 
-document.getElementById("total").textContent = total;
+    const goombaTotal = Number(formPrice.goombas.value);
+    const goombaPrice = Number(goombaTotal * 5);
 
-pests.goombas.value = 0;
-pests.bobombs.value = 0;
-pests.cheepCheeps.value = 0;
+    const bobombsTotal = Number(formPrice.bobombs.value);
+    const bobombsPrice = Number(bobombsTotal * 7);
+
+    const cheepcheepsTotal = Number(formPrice.cheepcheeps.value);
+    const cheepcheepsPrice = Number(cheepcheepsTotal * 11);
+
+    price = goombaPrice + bobombsPrice + cheepcheepsPrice;
+
+    const finalTotal = document.createElement("p");
+    finalTotal.textContent = "Total: " + price + " coins";
+    finalTotal.style.fontSize = "50px";
+    finalTotal.style.textAlign = "center";
+    document.getElementById("form").append(finalTotal);
+
+    clearTotal.addEventListener("click", function(e) {
+        e.preventDefault();
+        finalTotal.remove();
+    })
 });

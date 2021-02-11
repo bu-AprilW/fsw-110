@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mario Pest Control</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
@@ -9,49 +10,42 @@
         <header>
             <h1>Mario Pest Control</h1>
         </header>
-        <main>
-            <form name="baddies">
-                <table><tbody>
-                    <tr>
-                        <th>Baddie Name</th>
-                        <th>Capture Price</th>
-                        <th>Capture Number</th>
-                    </tr>
-                    <tr>
-                        <td>Goombas</td>
-                        <td>5 Coins</td>
-                        <td>
-                            <input type="number" min="0" value="0" name="goombas" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bob-ombs</td>
-                        <td>7 Coins</td>
-                        <td>
-                            <input type="number" min="0" value="0" name="bobombs" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cheep-cheeps</td>
-                        <td>11 Coins</td>
-                        <td>
-                            <input type="number" min="0" value="0" name="cheepCheeps" required/>
-                        </td>
-                    </tr>
-                    <tr id="totals">
-                        <td>
-                            <h4>Total: </h4>
-                        </td>
-                        <td>
-                            <span id="total" role="alert"></span> coins
-                        </td>
-                        <td>
-                            <button>Done</button>
-                        </td>
-                    </tr>
-                </tbody></table>
-            </form>
-        </main>
+        <form id="form" name="prices">
+            <div id="container">
+                <div id="baddieGoomba">
+                    <p id="goomba">Goomba Removal Price</p>
+                    <p id="goombaPrice">Removal Price: 5 Coins</p>
+                    <img id="goombaImg" src="https://giantbomb1.cbsistatic.com/uploads/scale_small/0/6753/200638-goomba3d.jpg"/>
+                    <input type="number" name="goombas" placeholder="Number Removed"/>
+                </div>
+
+                <div id="baddieBobombs">
+                    <p id="bobomb">Bob-ombs Removal Price</p>
+                    <p id="bobombsPrice">Removal Price: 7 Coins</p>
+                    <img id="bobombsImg" src="https://www.nicepng.com/png/detail/19-198615_bomb-drawing-super-mario-super-mario-bros-bomb.png"/>
+                    <input type="number" name="bobombs" placeholder="Number Removed"/>
+                </div>
+
+                <div id="baddieCheepCheeps">
+                    <p id="cheepcheep">Cheep-Cheeps Removal Price</p>
+                    <p id="cheepcheepsPrice">Removal Price: 11 Coins</p>
+                    <img id="cheepcheepsImg" src="https://giantbomb1.cbsistatic.com/uploads/scale_medium/0/2714/375289-cheapycheep.jpg"/>
+                    <input type="number" name="cheepcheeps" placeholder="Number Removed"/>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <button id="submitBtn">Calculate Total Price</button>
+                <button id="clearBtn">Clear Total Price</button>
+            </div>
+        </form>
+    
+        <footer>
+            <p>Email Address: mario@mushroomKingdom.com</p>
+            <p>Website: MarioPestControl.com</p>
+            <p>Address: 303 Mushroom Lane, Mushroom Kingdom 31254</p>
+        </footer>
+
         <script src="index.js"></script>
     </body>
 </html>
